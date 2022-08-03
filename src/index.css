@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply min-h-screen bg-slate-900 text-slate-100;
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  body {
+    @apply min-h-screen bg-background text-white font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+}
+
+@layer utilities {
+  .center {
+    @apply flex justify-center items-center
+  }
+
+  .inline-center {
+    @apply inline-flex justify-center items-center
+  }
 }
