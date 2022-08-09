@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        grid: "url(/src/assets/images/background.png)"
+      }
+    },
     colors: {
       'background': '#0e0e0e',
       'logo': '#ff5b50',
