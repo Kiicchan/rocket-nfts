@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        grid: "url(/src/assets/images/background.png)"
+        grid: "url(/assets/images/background.png)"
       }
     },
     colors: {
