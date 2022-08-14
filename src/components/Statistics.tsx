@@ -1,7 +1,7 @@
 export function Statistics() {
     return (
         <div className="border-b border-subtitle">
-            <div className="container mx-auto grid grid-cols-6 grid-rows-2">
+            <div className="grid grid-cols-6 grid-rows-2">
                 <div className="col-span-1 row-span-2 flex flex-col justify-center gap-10 border-r border-subtitle">
                     <p className="text-5xl text-center font-semibold">10K+ <small className="block text-xl text-subtitle">Artes</small></p>
                     <p className="text-5xl text-center font-semibold">200+ <small className="block text-xl text-subtitle">Vendas</small></p>
