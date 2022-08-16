@@ -3,6 +3,7 @@ import { Header } from "./components/Header"
 import { Statistics } from "./components/Statistics"
 import { Popular } from "./components/Popular"
 import { Artists } from "./components/Artists"
+import { Footer } from "./components/Footer"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Popular />
         <Artists />
       </main>
+      <Footer />
     </div>
   )
 }
