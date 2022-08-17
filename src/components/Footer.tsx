@@ -11,8 +11,17 @@ export function Footer() {
                 </div>
                 <div className="border-y border-subtitle">
                     <div className="container mx-auto grid grid-cols-[1fr_2fr]">
-                        <div className="flex flex-col justify-center">
-                            <p className="text-3xl font-medium">Fique por dentro de <strong className="text-logo block">todas as novidades</strong></p>
+                        <div className="flex flex-col py-10">
+                            <p className="mb-6 text-3xl font-medium">Fique por dentro de <strong className="text-logo block">todas as novidades</strong></p>
+                            <form onSubmit={(e) => e.preventDefault()}>
+                                <input className="bg-input text-subtitle focus:outline focus:outline-logo text-xl p-2"
+                                    type="email"
+                                    name="news-letter-signup"
+                                    id="news-letter-signup"
+                                    placeholder="Informe seu email..." />
+                                <button className="bg-white text-black font-bold text-xl p-2 border-none active:shadow-inner active:shadow-black"
+                                    type={"submit"}>Enviar</button>
+                            </form>
                         </div>
                         <div className="flex justify-around text-xl border-l border-subtitle py-10">
                             <div>
