@@ -19,7 +19,7 @@ const galleryURLs = [
 export function MainSection() {
     return (
         <section className="bg-grid bg-cover bg-center bg-no-repeat pt-48">
-            <div className="flex items-center justify-between container mx-auto gap-10">
+            <div className="flex items-center justify-between container gap-10">
                 <div className="flex flex-col gap-4 basis-[400px]">
                     <p className="text-lg">Mercado digital para colecionáveis em criptos e tokens não fungíveis (NFT). Compre, venda e descubra ativos digitais exclusivos para você.</p>
                     <div className="flex items-end">
@@ -44,7 +44,7 @@ export function MainSection() {
                     <img src="/assets/icons/badge.svg" alt="Badge" />
                 </div>
             </div>
-            <div className="mt-20 container mx-auto grid grid-cols-4 gap-y-20 gap-x-10">
+            <div className="mt-20 container grid grid-cols-4 gap-y-20 gap-x-10">
                 {galleryURLs.map((url, index) => <img className="border border-white w-full"
                     src={url}
                     key={url}

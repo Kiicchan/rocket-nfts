@@ -2,7 +2,7 @@ export function Footer() {
     return (
         <footer className="bg-card">
             <div className="">
-                <div className="container mx-auto flex justify-between py-10">
+                <div className="container flex justify-between py-10">
                     <img src="/assets/icons/logo.svg" alt="logo" />
                     <button className="center bg-logo h-20 w-20"
                         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
@@ -10,7 +10,7 @@ export function Footer() {
                     </button>
                 </div>
                 <div className="border-y border-subtitle">
-                    <div className="container mx-auto grid grid-cols-[1fr_2fr]">
+                    <div className="container grid grid-cols-[1fr_2fr]">
                         <div className="flex flex-col py-10">
                             <p className="mb-6 text-3xl font-medium">Fique por dentro de <strong className="text-logo block">todas as novidades</strong></p>
                             <form onSubmit={(e) => e.preventDefault()}>
@@ -54,7 +54,7 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto flex justify-between py-10">
+                <div className="container flex justify-between py-10">
                     <a className="text-subtitle text-xl" href="https://github.com/Kiicchan" target={"_blank"}>github.com/Kiicchan</a>
                     <div className="flex gap-12">
                         <a href="#">

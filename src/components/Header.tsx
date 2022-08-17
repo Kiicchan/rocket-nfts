@@ -20,7 +20,7 @@ export function Header() {
 
     return (
         <div className={`fixed top-0 left-0 right-0 z-10 border-[transparent] ${!isOnTop && glass} transition-all`}>
-            <header className="container mx-auto py-14 flex items-center justify-between">
+            <header className="container py-14 flex items-center justify-between">
                 <h1 className="text-4xl font-bold">Rocket <strong className="text-logo">NFTs</strong></h1>
                 <nav>
                     <ul className="center gap-14 text-lg">
