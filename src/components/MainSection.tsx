@@ -19,8 +19,8 @@ const galleryURLs = [
 export function MainSection() {
     return (
         <section className="bg-grid bg-cover bg-center bg-no-repeat pt-48">
-            <div className="flex items-center justify-between container gap-10">
-                <div className="flex flex-col gap-4 basis-[400px]">
+            <div className="grid grid-cols-[2fr_3fr_1fr] container gap-10">
+                <div className="flex flex-col gap-4">
                     <p className="text-lg">Mercado digital para colecionáveis em criptos e tokens não fungíveis (NFT). Compre, venda e descubra ativos digitais exclusivos para você.</p>
                     <div className="flex items-end">
                         <div className="image-stack relative h-20 w-40">
@@ -37,10 +37,10 @@ export function MainSection() {
                         </p>
                     </div>
                 </div>
-                <h2 className="text-5xl font-bold basis-[600px]">
+                <h2 className="text-5xl font-bold">
                     Descubra a verdadeira arte digital e colecione diversas <strong className="text-logo">NFTs</strong>
                 </h2>
-                <div className="center basis-[200px]">
+                <div className="center">
                     <img src="/assets/icons/badge.svg" alt="Badge" />
                 </div>
             </div>
