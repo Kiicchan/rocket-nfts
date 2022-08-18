@@ -8,6 +8,10 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  li > a {
+    @apply inline-block
+  }
+
   button {
     @apply cursor-pointer
   }
