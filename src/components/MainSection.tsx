@@ -24,8 +24,10 @@ export function MainSection() {
                     <p className="text-lg">Mercado digital para colecionáveis em criptos e tokens não fungíveis (NFT). Compre, venda e descubra ativos digitais exclusivos para você.</p>
                     <div className="flex items-end">
                         <div className="image-stack relative h-20 w-40">
-                            {artistsURLs.map((url, index, arr) => <img className="w-20 h-20 absolute"
+                            {artistsURLs.map((url, index) => <img className="absolute hover:translate-x-4 last:hover:translate-x-0 peer peer-hover:-translate-x-4 transition-transform"
                                 style={{ left: index * 26 }}
+                                height={"80"}
+                                width={"80"}
                                 key={url}
                                 src={url}
                                 alt={`artista-${index + 1}`}
@@ -41,11 +43,13 @@ export function MainSection() {
                     Descubra a verdadeira arte digital e colecione diversas <strong className="text-logo">NFTs</strong>
                 </h2>
                 <div className="center">
-                    <img src="/assets/icons/badge.svg" alt="Badge" />
+                    <img className="hover:rotate-[360deg] duration-500"
+                        src="/assets/icons/badge.svg"
+                        alt="Badge" />
                 </div>
             </div>
-            <div className="mt-20 container grid grid-cols-4 gap-y-20 gap-x-10">
-                {galleryURLs.map((url, index) => <img className="border border-white w-full"
+            <div className="mt-20 container flex flex-wrap justify-between gap-y-10">
+                {galleryURLs.map((url, index) => <img className="border hover:scale-110 transition-transform cursor-pointer"
                     src={url}
                     key={url}
                     alt={`photo-${index + 1}`}
