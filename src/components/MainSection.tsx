@@ -42,7 +42,7 @@ export function MainSection() {
                 <h2 className="text-5xl font-bold">
                     Descubra a verdadeira arte digital e colecione diversas <strong className="text-logo">NFTs</strong>
                 </h2>
-                <div className="center">
+                <div className="center overflow-hidden">
                     <img className="hover:rotate-[360deg] duration-500"
                         src="/assets/icons/badge.svg"
                         alt="Badge" />
