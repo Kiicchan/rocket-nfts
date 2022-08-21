@@ -7,6 +7,13 @@ module.exports = {
         grid: "url(/assets/images/background.png)"
       }
     },
+    screens: {
+      '2xl': { 'max': '1535px' },
+      'xl': { 'max': '1279px' },
+      'lg': { 'max': '1023px' },
+      'md': { 'max': '767px' },
+      'sm': { 'max': '639px' },
+    },
     colors: {
       'background': '#0e0e0e',
       'logo': '#ff5b50',
@@ -21,7 +28,17 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '2rem'
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem'
+      },
+      screens: {
+        '2xl': '1535px',
+        'xl': '1279px',
+        'lg': '1023px',
+        'md': '767px',
+        'sm': '639px',
+      },
     }
   },
   plugins: [],
