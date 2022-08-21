@@ -9,7 +9,7 @@
   }
 
   li > a {
-    @apply inline-block
+    @apply inline-block w-full
   }
 
   button {
