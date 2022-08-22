@@ -11,7 +11,7 @@ export function Footer() {
             </div>
             <div className="border-y border-subtitle">
                 <div className="container grid grid-cols-[1fr_2fr] md:grid-cols-2 sm:grid-cols-1">
-                    <div className="flex flex-col py-10 pr-1 lg:py-5 sm:pr-0">
+                    <div className="flex flex-col py-10 pr-10 lg:py-5 sm:pr-0">
                         <p className="mb-6 text-3xl font-medium lg:text-xl lg:mb-2">Fique por dentro de <strong className="text-logo block sm:inline">todas as novidades</strong></p>
                         <form onSubmit={(e) => e.preventDefault()} className="flex sm:justify-around">
                             <input className="bg-input grow text-subtitle focus:outline outline-white mr-[2px] invalid:outline-logo text-xl p-2 lg:text-base"
