@@ -11,12 +11,12 @@ const artists: ArtistCardProps[] = [
 
 export function Artists() {
     return (
-        <section className="container my-36">
-            <h2 className="text-5xl font-bold my-36 text-center">Melhores <strong className="text-logo">artistas</strong></h2>
-            <div className="flex flex-wrap gap-28 justify-between">
+        <section className="container sm:border-t sm:border-subtitle">
+            <h2 className="text-5xl font-bold my-36 text-center lg:text-3xl lg:my-10 sm:my-5">Melhores <strong className="text-logo">artistas</strong></h2>
+            <div className="flex flex-wrap gap-28 justify-between lg:justify-center lg:gap-10">
                 {artists.map(artist => <ArtistCard key={artist.name} {...artist} />)}
             </div>
-            <div className="center mt-12">
+            <div className="center mt-12 mb-36 lg:my-10 sm:mb-5">
                 <a className="text-xl flex gap-4" href="#">Ver todos os artistas <img src="/assets/icons/arrow-orange.svg" alt="" /></a>
             </div>
         </section>

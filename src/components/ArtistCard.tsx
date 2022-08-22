@@ -6,12 +6,14 @@ export interface ArtistCardProps {
 
 export function ArtistCard(props: ArtistCardProps) {
     return (
-        <div className="center h-36 w-80 bg-card group hover:bg-logo transition-colors gap-10">
-            <img src={props.imageUrl} alt={props.name} height="100" width="100" />
-            <div>
-                <p className="text-xl font-medium">{props.name}</p>
-                <p className="text-logo text-xl font-medium group-hover:text-white">{props.photos} fotografias</p>
+        <a href="#">
+            <div className="center h-36 w-80 bg-card group hover:bg-logo transition-colors gap-10 lg:h-28 lg:w-64 lg:gap-5">
+                <img src={props.imageUrl} alt={props.name} height="100" width="100" className="lg:w-20" />
+                <div className="text-xl font-medium lg:text-base">
+                    <p>{props.name}</p>
+                    <p className="text-logo group-hover:text-white">{props.photos} fotografias</p>
+                </div>
             </div>
-        </div>
+        </a>
     )
 }
