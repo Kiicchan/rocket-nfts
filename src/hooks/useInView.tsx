@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react"
 export function useInView() {
     const [isInView, setIsInView] = useState(false)
     const elementRef = useRef<HTMLElement>(null)
-    console.log(isInView)
     useEffect(() => {
         const listener: EventListener = () => {
             if (elementRef.current !== null) {
