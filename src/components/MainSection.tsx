@@ -43,7 +43,7 @@ export function MainSection() {
                     Descubra a verdadeira arte digital e colecione diversas <strong className="text-logo">NFTs</strong>
                 </h2>
                 <div className="center xl:row-span-2 sm:row-span-1">
-                    <img className="relative hover:rotate-[360deg] duration-1000 animate-in slide-in-from-right-full fade-in-0 spin-in-180"
+                    <img className="hover:rotate-[360deg] duration-1000 animate-in slide-in-from-right-full fade-in-0 spin-in-180"
                         src="/assets/icons/badge.svg"
                         alt="Badge" />
                 </div>
