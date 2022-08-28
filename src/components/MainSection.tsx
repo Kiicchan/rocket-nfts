@@ -18,8 +18,9 @@ const galleryURLs = [
 
 export function MainSection() {
     return (
-        <section className="bg-grid bg-cover bg-center bg-no-repeat lg:bg-repeat lg:bg-auto pt-48 lg:pt-20">
-            <div className="grid grid-cols-[2fr_3fr_200px] container gap-10 lg:gap-5 xl:grid-cols-[2fr_1fr] sm:grid-cols-1">
+        // <section className="bg-grid bg-cover bg-center bg-no-repeat lg:bg-repeat lg:bg-auto pt-48 lg:pt-20">
+        <section className="bg-grid bg-contain bg-repeat-round pt-48 lg:pt-20">
+            <div className="grid grid-cols-[2fr_3fr_200px] container gap-10 lg:gap-5 xl:grid-cols-[2fr_1fr] sm:grid-cols-1 sm:grid-rows-[auto_200px_auto]">
                 <div className="flex flex-col justify-between gap-4 text-lg xl:text-sm xl:order-1 duration-1000 animate-in slide-in-from-left-full fade-in-0">
                     <p>Mercado digital para colecionáveis em criptos e tokens não fungíveis (NFT). Compre, venda e descubra ativos digitais exclusivos para você.</p>
                     <div className="flex items-end">
@@ -49,10 +50,11 @@ export function MainSection() {
                 </div>
             </div>
             <div className="container flex flex-wrap justify-evenly gap-10 mt-20 lg:gap-5 lg:mt-10 sm:mt-5">
-                {galleryURLs.map((url, index) => <img className="border hover:scale-110 transition-transform cursor-pointer animate-in zoom-in-150 fade-in-0 fill-mode-backwards duration-500"
+                {galleryURLs.map((url, index) => <img className="border box-content hover:scale-110 transition-transform cursor-pointer animate-in zoom-in-150 fade-in-0 fill-mode-backwards duration-500"
                     style={{ animationDelay: `${index * 100}ms` }}
                     src={url}
-                    width="308"
+                    width="305"
+                    height="198"
                     key={url}
                     alt={`photo-${index + 1}`}
                 ></img>)}
